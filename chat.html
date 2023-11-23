@@ -49,21 +49,6 @@
   			}
   		);
   	};
-
-    <a id="liveagent_button_online_5730a000000XZHL" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730a000000XZHL')">
-      <!-- Online Chat Content -->
-    </a>
-      <div id="liveagent_button_offline_5730a000000XZHL" style="display: none;"><!-- Offline Chat Content -->
-      
-      </div>
-      
-      <script type="text/javascript">
-        if (!window._laq) { window._laq = []; }
-        window._laq.push(function(){liveagent.showWhenOnline('5730a000000XZHL', document.getElementById('liveagent_button_online_5730a000000XZHL'));
-        liveagent.showWhenOffline('5730a000000XZHL', document.getElementById('liveagent_button_offline_5730a000000XZHL'));
-          });
-      </script>
-
   
   	if (!window.embedded_svc) {
   		var s = document.createElement('script');
@@ -76,4 +61,18 @@
   		initESW('https://service.force.com');
   	}
   </script>
+
+      <a id="liveagent_button_online_5730a000000XZHL" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730a000000XZHL')">
+      <!-- Online Chat Content -->
+    </a>
+      <div id="liveagent_button_offline_5730a000000XZHL" style="display: none;"><!-- Offline Chat Content -->
+      
+      </div>
+      
+      <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function(){liveagent.showWhenOnline('5730a000000XZHL', document.getElementById('liveagent_button_online_5730a000000XZHL'));
+        liveagent.showWhenOffline('5730a000000XZHL', document.getElementById('liveagent_button_offline_5730a000000XZHL'));
+          });
+      </script>
 </html>
