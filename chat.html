@@ -41,14 +41,29 @@
   			'Supergasbras_Bot',
   			{
   				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/content',
-  				deploymentId: '5725b000000wk2T',
-  				buttonId: '5735b000000wk2Y',
+  				deploymentId: '5720a000000fxW8',
+  				buttonId: '5730a000000XZHL',
   				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/chat',
   				eswLiveAgentDevName: 'Supergasbras_Bot',
   				isOfflineSupportEnabled: false
   			}
   		);
   	};
+
+    <a id="liveagent_button_online_5730a000000XZHL" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730a000000XZHL')">
+      <!-- Online Chat Content -->
+    </a>
+      <div id="liveagent_button_offline_5730a000000XZHL" style="display: none;"><!-- Offline Chat Content -->
+      
+      </div>
+      
+      <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function(){liveagent.showWhenOnline('5730a000000XZHL', document.getElementById('liveagent_button_online_5730a000000XZHL'));
+        liveagent.showWhenOffline('5730a000000XZHL', document.getElementById('liveagent_button_offline_5730a000000XZHL'));
+          });
+      </script>
+
   
   	if (!window.embedded_svc) {
   		var s = document.createElement('script');
