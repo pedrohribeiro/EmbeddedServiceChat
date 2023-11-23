@@ -8,6 +8,13 @@
   		outline: 1px solid #005290;
   	}
   </style>
+
+  <a id="liveagent_button_online_5730a000000XZHL" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730a000000XZHL')">
+      <!-- Online Chat Content -->
+    </a>
+      <div id="liveagent_button_offline_5730a000000XZHL" style="display: none;"><!-- Offline Chat Content -->
+      
+      </div>
   
   <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
   <script type='text/javascript'>
@@ -60,19 +67,11 @@
   	} else {
   		initESW('https://service.force.com');
   	}
-  </script>
 
-      <a id="liveagent_button_online_5730a000000XZHL" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730a000000XZHL')">
-      <!-- Online Chat Content -->
-    </a>
-      <div id="liveagent_button_offline_5730a000000XZHL" style="display: none;"><!-- Offline Chat Content -->
-      
-      </div>
-      
-      <script type="text/javascript">
-        if (!window._laq) { window._laq = []; }
+    if (!window._laq) { window._laq = []; }
         window._laq.push(function(){liveagent.showWhenOnline('5730a000000XZHL', document.getElementById('liveagent_button_online_5730a000000XZHL'));
         liveagent.showWhenOffline('5730a000000XZHL', document.getElementById('liveagent_button_offline_5730a000000XZHL'));
           });
-      </script>
+    
+  </script>
 </html>
