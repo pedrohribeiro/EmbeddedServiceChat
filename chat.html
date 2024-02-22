@@ -34,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://kolekto--uat.sandbox.my.salesforce.com',
-			'https://kolekto--uat.sandbox.my.site.com/partner',
+			'https://moovelub--osfdev.sandbox.my.salesforce.com',
+			'https://moovelub--osfdev.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D8G0000008hfa',
-			'Supergasbras_Bot',
+			'00D6u000000H0TS',
+			'CustomerServicePreChat',
 			{
-				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/content',
-				deploymentId: '5725b000000wk2T',
-				buttonId: '5730a000000XZHL',
-				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Supergasbras_Bot',
+				baseLiveAgentContentURL: 'https://c.la4-c1cs-ia4.salesforceliveagent.com/content',
+				deploymentId: '5720H0000006rqw',
+				buttonId: '5730H0000006w17',
+				baseLiveAgentURL: 'https://d.la4-c1cs-ia4.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I6u0000004CSeEAM_18dd0ef7c1c',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -52,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://kolekto--uat.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://moovelub--osfdev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
