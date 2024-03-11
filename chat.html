@@ -1,5 +1,5 @@
 <html>
-	<style type='text/css'>
+<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -34,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://moovelub--osfqa.sandbox.my.salesforce.com',
-			'https://moovelub--osfqa.sandbox.my.site.com/',
+			'https://moovelub--osfdev.sandbox.my.salesforce.com',
+			'https://moovelub--osfdev.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D8M0000008j13',
+			'00D6u000000H0TS',
 			'CreditAndCollectionPreChat',
 			{
 				baseLiveAgentContentURL: 'https://c.la4-c1cs-ia4.salesforceliveagent.com/content',
 				deploymentId: '5720H0000006rqw',
-				buttonId: '5738M000000Gmf4',
+				buttonId: '5736u0000004CPa',
 				baseLiveAgentURL: 'https://d.la4-c1cs-ia4.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I8M000000GmkhUAC_18e0eef5d20',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I6u0000004CSjEAM_18dd11d073d',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -52,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://moovelub--osfqa.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://moovelub--osfdev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
